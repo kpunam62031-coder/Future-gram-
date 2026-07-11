@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FutureGram Feed</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f2f2f2;
+}
+
+.header{
+    background:#833AB4;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:28px;
+}
+
+.post{
+    background:white;
+    width:85%;
+    margin:20px auto;
+    padding:15px;
+    border-radius:15px;
+}
+
+.post img{
+    width:100%;
+    border-radius:10px;
+}
+
+button{
+    padding:10px;
+    margin:5px;
+    background:#833AB4;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+input{
+    padding:10px;
+    width:70%;
+}
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#833AB4;
+    display:flex;
+    justify-content:space-around;
+    padding:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+📸 FutureGram
+</div>
+
+
+<div class="post">
+
+<h3>👤 Alok</h3>
+
+<img src="https://picsum.photos/400/250">
+
+<p>My first FutureGram post 🚀</p>
+
+<p id="like">❤️ Likes: 0</p>
+
+<button onclick="likePost()">
+❤️ Like
+</button>
+
+<br>
+
+<input id="comment" placeholder="Write comment">
+
+<button onclick="commentPost()">
+💬 Post
+</button>
+
+<p id="show"></p>
+
+</div>
+
+
+<div class="bottom-nav">
+
+<button onclick="location.href='feed.html'">
+🏠
+</button>
+
+<button onclick="location.href='search.html'">
+🔍
+</button>
+
+<button onclick="location.href='addpost.html'">
+➕
+</button>
+
+<button onclick="location.href='profile.html'">
+👤
+</button>
+
+<button onclick="location.href='settings.html'">
+⚙️
+</button>
+
+</div>
+
+
+<script>
+
+let count=0;
+
+function likePost(){
+count++;
+document.getElementById("like").innerHTML="❤️ Likes: "+count;
+}
+
+
+function commentPost(){
+let c=document.getElementById("comment").value;
+document.getElementById("show").innerHTML="💬 "+c;
+}
+
+</script>
+
+</body>
+</html>

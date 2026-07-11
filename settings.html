@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>FutureGram Settings</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#f2f2f2;
+    text-align:center;
+    margin:0;
+}
+
+.header{
+    background:#833AB4;
+    color:white;
+    padding:15px;
+    font-size:28px;
+}
+
+.box{
+    background:white;
+    width:85%;
+    margin:30px auto;
+    padding:20px;
+    border-radius:15px;
+}
+
+button{
+    padding:10px 20px;
+    margin:8px;
+    background:#833AB4;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#833AB4;
+    padding:8px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+⚙️ FutureGram Settings
+</div>
+
+
+
+<div class="box">
+
+
+<h2>Settings</h2>
+
+
+<button onclick="darkMode()">
+🌙 Dark Mode
+</button>
+
+
+<br>
+
+
+<button onclick="alert('Edit Profile Soon 🚀')">
+✏️ Edit Profile
+</button>
+
+
+<br>
+
+
+<button onclick="alert('FutureGram Version 1.0')">
+ℹ️ About App
+</button>
+
+
+<br>
+
+
+<button onclick="location.href='feed.html'">
+🏠 Home
+</button>
+
+
+<br>
+
+
+<button onclick="logout()">
+🚪 Logout
+</button>
+
+
+</div>
+
+
+
+
+<div class="bottom-nav">
+
+<button onclick="location.href='feed.html'">🏠</button>
+
+<button onclick="location.href='search.html'">🔍</button>
+
+<button onclick="location.href='addpost.html'">➕</button>
+
+<button onclick="location.href='profile.html'">👤</button>
+
+<button onclick="location.href='settings.html'">⚙️</button>
+
+</div>
+
+
+
+
+<script>
+
+
+function darkMode(){
+
+document.body.style.background="black";
+
+document.body.style.color="white";
+
+}
+
+
+function logout(){
+
+location.href="index.html";
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>

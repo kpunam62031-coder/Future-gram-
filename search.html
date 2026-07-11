@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>FutureGram Search</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#f2f2f2;
+    text-align:center;
+    margin:0;
+}
+
+.header{
+    background:#833AB4;
+    color:white;
+    padding:15px;
+    font-size:28px;
+}
+
+.box{
+    background:white;
+    width:85%;
+    margin:30px auto;
+    padding:20px;
+    border-radius:15px;
+}
+
+input{
+    width:80%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:10px;
+    margin:8px;
+    background:#833AB4;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#833AB4;
+    padding:8px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+🔍 Search FutureGram
+</div>
+
+
+
+<div class="box">
+
+<h2>Find User</h2>
+
+
+<input id="name" placeholder="Search username">
+
+
+<br>
+
+
+<button onclick="searchUser()">
+🔍 Search
+</button>
+
+
+<p id="result"></p>
+
+
+</div>
+
+
+
+<div class="bottom-nav">
+
+<button onclick="location.href='feed.html'">🏠</button>
+
+<button onclick="location.href='search.html'">🔍</button>
+
+<button onclick="location.href='addpost.html'">➕</button>
+
+<button onclick="location.href='profile.html'">👤</button>
+
+<button onclick="location.href='settings.html'">⚙️</button>
+
+</div>
+
+
+
+<script>
+
+function searchUser(){
+
+let user=document.getElementById("name").value;
+
+
+if(user==""){
+
+alert("Username likho");
+
+}
+
+else{
+
+document.getElementById("result").innerHTML=
+"User Found: "+user+" 🚀";
+
+}
+
+}
+
+</script>
+
+
+</body>
+
+</html>
